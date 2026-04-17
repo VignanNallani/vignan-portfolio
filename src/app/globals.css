@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-electric-blue to-blue-600 bg-clip-text text-transparent;
+  }
+  
+  .nav-link {
+    @apply relative text-navy hover:text-electric-blue transition-colors duration-200 after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-0.5 after:bg-electric-blue after:transition-all after:duration-200 hover:after:w-full;
+  }
+  
+  .btn-primary {
+    @apply bg-electric-blue text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-600 transition-colors duration-200 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-electric-blue text-electric-blue px-6 py-3 rounded-lg font-medium hover:bg-electric-blue hover:text-white transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 p-6;
+  }
+  
+  .skill-badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-navy text-white;
+  }
+  
+  .tech-tag {
+    @apply inline-block px-3 py-1 text-xs font-medium bg-gray-100 text-navy rounded-full;
+  }
+}
