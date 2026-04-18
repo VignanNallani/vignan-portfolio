@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const About = () => {
   return (
@@ -26,10 +27,17 @@ const About = () => {
             className="flex justify-center"
           >
             <div className="relative">
-              <div className="w-64 h-64 bg-gradient-to-br from-electric-blue to-blue-600 rounded-full flex items-center justify-center shadow-2xl">
-                <span className="text-6xl font-bold text-white">VN</span>
+              <div className="w-[180px] h-[180px] rounded-full overflow-hidden border-[3px] border-[#3B82F6] shadow-lg">
+                <Image 
+                  src="/vignan.jpeg" 
+                  alt="Vignan Nallani" 
+                  width={180}
+                  height={180}
+                  className="rounded-full object-cover"
+                  priority
+                />
               </div>
-              <div className="absolute -inset-4 bg-gradient-to-br from-electric-blue/20 to-blue-600/20 rounded-full blur-xl"></div>
+              <div className="absolute -inset-2 bg-gradient-to-br from-[#3B82F6]/20 to-blue-600/20 rounded-full blur-xl"></div>
             </div>
           </motion.div>
 
