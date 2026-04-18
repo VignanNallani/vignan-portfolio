@@ -8,17 +8,17 @@
 3. Get your Measurement ID (format: `G-XXXXXXXXXX`)
 
 ### 2. Update the Measurement ID
-The Measurement ID `G-533505623` is already configured in `src/app/layout.tsx`:
+The Measurement ID `G-N5MWVPF4KR` is already configured in `src/app/layout.tsx`:
 
 ```tsx
 // Line 36
-src="https://www.googletagmanager.com/gtag/js?id=G-533505623"
+src="https://www.googletagmanager.com/gtag/js?id=G-N5MWVPF4KR"
 
 // Line 44
-gtag('config', 'G-533505623');
+gtag('config', 'G-N5MWVPF4KR');
 ```
 
-If you need to change it, simply replace `G-533505623` with your new Measurement ID.
+If you need to change it, simply replace `G-N5MWVPF4KR` with your new Measurement ID.
 
 ### 3. Verify Installation
 After deployment, check:
