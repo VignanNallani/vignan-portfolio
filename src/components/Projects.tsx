@@ -10,7 +10,8 @@ const Projects = () => {
       description: 'A full-stack community platform with real-time notifications, role-based access, nested comments, post reactions, and bookmarks. Engineered the entire backend from schema design to REST API. Reduced average API response time by 40% through PostgreSQL indexing and improved page-load speed by 60% with skeleton loaders.',
       tech: ['Node.js', 'Express.js', 'PostgreSQL', 'Prisma ORM', 'React.js', 'Socket.IO', 'Docker', 'JWT', 'Tailwind CSS'],
       status: 'Completed',
-      githubLink: 'https://github.com/VignanNallani'
+      githubLink: 'https://github.com/VignanNallani',
+      liveLink: 'https://knowledge-sharing-community.vercel.app/'
     },
     {
       title: 'AI-Based Smart Plastic Recycling System',
@@ -75,16 +76,29 @@ const Projects = () => {
                 ))}
               </div>
               
-              <a
-                href={project.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-electric-blue hover:text-blue-600 font-medium transition-colors"
-              >
-                <Github size={18} />
-                View on GitHub
-                <ExternalLink size={16} />
-              </a>
+              <div className="flex gap-4">
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-electric-blue hover:text-blue-600 font-medium transition-colors"
+                >
+                  <Github size={18} />
+                  View on GitHub
+                  <ExternalLink size={16} />
+                </a>
+                {project.liveLink && (
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-electric-blue hover:text-blue-600 font-medium transition-colors"
+                  >
+                    <ExternalLink size={18} />
+                    Live Demo
+                  </a>
+                )}
+              </div>
             </motion.div>
           ))}
         </div>

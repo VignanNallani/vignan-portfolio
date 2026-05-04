@@ -8,16 +8,9 @@ const OpenSource = () => {
     {
       repo: 'langgenius/dify',
       stars: '30,000+',
-      description: 'Improved back-end ORM modules across 5+ files with typed annotations and type-safe patterns. Fixed 4+ runtime type errors. Pull requests reviewed and merged by core maintainers.',
-      tech: ['Python', 'ORM', 'Type Annotations', 'Code Review'],
-      githubLink: 'https://github.com/langgenius/dify'
-    },
-    {
-      repo: 'aden-hive/hive',
-      stars: 'Open Source',
-      description: 'Resolved 3 runtime errors and 2 Windows cross-platform compatibility bugs. Wrote a PowerShell script that cut contributor setup time from 25 minutes to under 5 minutes.',
-      tech: ['Python', 'PowerShell', 'Cross-platform Debugging', 'Git'],
-      githubLink: 'https://github.com/aden-hive/hive'
+      description: 'Submitted PR #32644 improving SQLAlchemy 2.0 ORM typing in the Dataset model — replacing untyped mapped_column declarations with correctly typed Mapped[str | None] annotations for nullable columns. Currently under maintainer review.',
+      tech: ['Python', 'SQLAlchemy', 'Type Annotations', 'ORM'],
+      githubLink: 'https://github.com/langgenius/dify/pull/32644'
     }
   ]
 
