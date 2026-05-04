@@ -1,4 +1,4 @@
-  'use client'
+'use client'
 
 import { motion } from 'framer-motion'
 import { Star, ExternalLink, GitPullRequest } from 'lucide-react'
@@ -28,13 +28,13 @@ const OpenSource = () => {
           <div className="w-20 h-1 bg-electric-blue mx-auto"></div>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-1 gap-8 max-w-2xl mx-auto">
           {contributions.map((contribution, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, x: index === 0 ? -50 : 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
               viewport={{ once: true }}
               className="card group"
             >
@@ -63,11 +63,11 @@ const OpenSource = () => {
                   <ExternalLink size={20} />
                 </a>
               </div>
-              
+
               <p className="text-navy/70 mb-6">
                 {contribution.description}
               </p>
-              
+
               <div className="flex flex-wrap gap-2">
                 {contribution.tech.map((tech, techIndex) => (
                   <span key={techIndex} className="tech-tag">
