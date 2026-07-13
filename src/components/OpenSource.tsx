@@ -11,6 +11,20 @@ const OpenSource = () => {
       description: 'Submitted PR #32644 improving SQLAlchemy 2.0 ORM typing in the Dataset model — replacing untyped mapped_column declarations with correctly typed Mapped[str | None] annotations for nullable columns. Currently under maintainer review.',
       tech: ['Python', 'SQLAlchemy', 'Type Annotations', 'ORM'],
       githubLink: 'https://github.com/langgenius/dify/pull/32644'
+    },
+    {
+      repo: 'topoteretes/cognee',
+      stars: 'Open Source',
+      description: 'Contributed two search-layer fixes to Cognee, the open-source AI memory platform for agents: hardened query validation to consistently reject whitespace-only queries and non-positive top_k values (PR #3859), and made semantic search return an empty result when the knowledge graph is empty instead of failing (PR #3729). Both submitted as pull requests, under review.',
+      tech: ['Python', 'Semantic Search', 'Vector Retrieval', 'Code Review'],
+      githubLink: 'https://github.com/topoteretes/cognee'
+    },
+    {
+      repo: 'kubestellar/kubestellar',
+      stars: 'Open Source',
+      description: 'Fixed an infinite-loop bug in the multi-cluster configuration engine of this edge / multi-cloud Kubernetes project — objectIsQueried looping on embedded-then-standalone matches (PR #3849, Go). Also contributed documentation to the related KubeFlex control-plane component, including k3d hosting-cluster setup. Submitted as pull requests.',
+      tech: ['Go', 'Kubernetes', 'Multi-cluster', 'Technical Documentation'],
+      githubLink: 'https://github.com/kubestellar/kubestellar'
     }
   ]
 
@@ -28,13 +42,13 @@ const OpenSource = () => {
           <div className="w-20 h-1 bg-electric-blue mx-auto"></div>
         </motion.div>
 
-        <div className="grid md:grid-cols-1 gap-8 max-w-2xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {contributions.map((contribution, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
               className="card group"
             >

@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Projects from '@/components/Projects'
+import Hackathons from '@/components/Hackathons'
 import OpenSource from '@/components/OpenSource'
 import Experience from '@/components/Experience'
 import Skills from '@/components/Skills'
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <About />
       <Projects />
+      <Hackathons />
       <OpenSource />
       <Experience />
       <Skills />

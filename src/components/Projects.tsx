@@ -14,18 +14,26 @@ const Projects = () => {
       liveLink: 'https://knowledge-sharing-community.vercel.app/'
     },
     {
-      title: 'AI-Based Smart Plastic Recycling System',
-      description: 'An IoT + ML system that classifies PET, HDPE, and PP plastics targeting 95%+ accuracy. Integrates Raspberry Pi and ESP32 microcontrollers for real-time sensor monitoring with a zero-manual-step automated control loop that reduces manual sorting effort by 80%.',
-      tech: ['Python', 'Machine Learning', 'Raspberry Pi', 'ESP32', 'IoT', 'Automation'],
-      status: 'In Progress',
-      githubLink: 'https://github.com/VignanNallani'
+      title: 'ModMind',
+      description: 'An AI-powered Reddit moderation suite that fetches posts from any subreddit and runs Google Gemini analysis for sentiment, toxicity, and suggested moderator actions, surfaced through a subreddit-statistics dashboard. Built for the Google Cloud Rapid Agent Hackathon and iterated across Reddit and Splunk tracks.',
+      tech: ['React', 'Tailwind CSS', 'Vite', 'FastAPI', 'Python', 'Google Gemini', 'MongoDB Atlas', 'Reddit API'],
+      status: 'Completed',
+      githubLink: 'https://github.com/VignanNallani/modmind',
+      liveLink: 'https://modmind-gcai.vercel.app'
     },
     {
-      title: 'AURA - Personal AI Assistant',
-      description: 'A voice-activated AI assistant with a modular plugin architecture, context-aware command routing, and support for 5+ third-party API integrations. Designed for extensibility - each capability is a self-contained plugin.',
-      tech: ['Python', 'AI APIs', 'Voice Interface', 'Modular Plugin Architecture'],
-      status: 'In Progress',
-      githubLink: 'https://github.com/VignanNallani'
+      title: 'CreatorJoy – RAG Chatbot',
+      description: 'A full-stack retrieval-augmented chatbot that compares two YouTube videos or Instagram Reels by extracting transcripts, embedding them into a vector store, and answering with streaming, source-cited responses. Transcripts are chunked at 800 characters with 100-character overlap for retrieval quality.',
+      tech: ['Node.js', 'Python', 'LangChain.js', 'ChromaDB', 'Cohere', 'Groq', 'Llama 3.3', 'React', 'Server-Sent Events'],
+      status: 'Completed',
+      githubLink: 'https://github.com/VignanNallani/creatorjoy-rag'
+    },
+    {
+      title: 'AURA – Proactive AI Memory Layer',
+      description: 'A proactive "second brain" that surfaces relevant memories mid-conversation without being asked, using an 82% semantic-similarity threshold and entity extraction. Pairs a voice interface with real-time waveform visualization and pgvector semantic search over embedded memories.',
+      tech: ['Node.js', 'Express', 'PostgreSQL', 'pgvector', 'Socket.IO', 'OpenAI', 'NVIDIA Embeddings', 'ElevenLabs', 'Redis', 'Docker'],
+      status: 'Completed',
+      githubLink: 'https://github.com/VignanNallani/Vignan_Aura'
     }
   ]
 
@@ -63,11 +71,11 @@ const Projects = () => {
                   </span>
                 )}
               </div>
-              
+
               <p className="text-navy/70 mb-6 line-clamp-4">
                 {project.description}
               </p>
-              
+
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.tech.map((tech, techIndex) => (
                   <span key={techIndex} className="tech-tag">
@@ -75,8 +83,8 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
-              
-              <div className="flex gap-4">
+
+              <div className="flex flex-wrap items-center gap-4">
                 <a
                   href={project.githubLink}
                   target="_blank"

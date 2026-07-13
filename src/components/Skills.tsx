@@ -8,7 +8,7 @@ const Skills = () => {
     {
       title: 'Backend',
       icon: <Code size={24} />,
-      skills: ['Node.js', 'Express.js', 'REST APIs', 'JWT', 'Socket.IO', 'WebSockets', 'PHP']
+      skills: ['Node.js', 'Express.js', 'FastAPI', 'REST APIs', 'JWT', 'Socket.IO', 'WebSockets', 'PHP']
     },
     {
       title: 'Frontend',
@@ -18,12 +18,12 @@ const Skills = () => {
     {
       title: 'Databases',
       icon: <Database size={24} />,
-      skills: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'Prisma ORM']
+      skills: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'Prisma ORM', 'ChromaDB', 'pgvector']
     },
     {
       title: 'AI/ML & IoT',
       icon: <Cpu size={24} />,
-      skills: ['Python', 'Machine Learning', 'Raspberry Pi', 'ESP32', 'AI APIs']
+      skills: ['Python', 'Machine Learning', 'LangChain', 'Groq', 'Google Gemini', 'Cohere', 'Streamlit', 'Raspberry Pi', 'ESP32', 'AI APIs']
     },
     {
       title: 'DevOps & Cloud',
